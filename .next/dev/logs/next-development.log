@@ -1,8 +1,1 @@
-[00:00:02.498] Server  LOG      ✓ Ready in 1759ms
-[00:11:56.999] Server  LOG      ✓ Compiled in 219ms
-[00:12:38.832] Server  LOG      ✓ Compiled in 134ms
-[00:14:47.472] Server  ERROR   Node.js fs rename failed after 101 retries with error Error: EPERM: operation not permitted, rename 'C:\Users\FREE\Desktop\frontend\Malan\.next\dev\server\server-reference-manifest.js.tmp.hmxcdqv68rs' -> 'C:\Users\FREE\Desktop\frontend\Malan\.next\dev\server\server-reference-manifest.js'
-[00:14:47.484] Server  ERROR   C:\Users\FREE\Desktop\frontend\Malan\node_modules\.pnpm\next@16.0.7_react-dom@19.2.1_react@19.2.1__react@19.2.1\node_modules\next\dist\lib\fs\rename.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:14:47.489] Server  ERROR    ⨯ Error: EPERM: operation not permitted, rename 'C:\Users\FREE\Desktop\frontend\Malan\.next\dev\server\server-reference-manifest.js.tmp.hmxcdqv68rs' -> 'C:\Users\FREE\Desktop\frontend\Malan\.next\dev\server\server-reference-manifest.js'
-[00:36:34.470] Server  LOG      ✓ Compiled in 42ms
-[00:36:57.288] Server  LOG      ✓ Compiled in 45ms
+[00:00:02.619] Server  LOG      ✓ Ready in 1800ms
