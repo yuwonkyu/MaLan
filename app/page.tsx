@@ -34,7 +34,7 @@ export default function Home() {
               <Link
                 key={category.id}
                 href={`/${category.id}`}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow cursor-pointer group"
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-gray-900/50 p-6 hover:shadow-xl dark:hover:shadow-gray-900 transition-shadow cursor-pointer group"
               >
                 <div className="text-center">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
