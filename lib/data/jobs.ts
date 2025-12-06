@@ -1,30 +1,46 @@
-import { Job, JobCategory } from "@/types";
+import { Job, JobCategory, JobCategoryInfo } from "@/types";
 
 // 직업 카테고리 데이터
-export const jobCategories: {
-  id: JobCategory;
-  name: string;
-  description: string;
-}[] = [
+export const jobCategories: JobCategoryInfo[] = [
   {
     id: "warrior",
     name: "전사",
-    description: "높은 체력과 방어력을 가진 근접 전투의 달인",
+    weapons: ["검", "둔기", "도끼", "창", "폴암"],
+    jobs: {
+      second: ["파이터", "페이지", "스피어맨"],
+      third: ["크루세이더", "나이트", "용기사"],
+      fourth: ["히어로", "팔라딘", "다크나이트"],
+    },
   },
   {
     id: "magician",
     name: "마법사",
-    description: "강력한 마법으로 적을 제압하는 지혜의 수호자",
-  },
-  {
-    id: "thief",
-    name: "도적",
-    description: "빠른 속도와 회피로 적을 농락하는 암살자",
+    weapons: ["스태프", "완드"],
+    jobs: {
+      second: ["위자드(불독)", "위자드(썬콜)", "클레릭"],
+      third: ["메이지(불독)", "메이지(썬콜)", "프리스트"],
+      fourth: ["아크메이지(불독)", "아크메이지(썬콜)", "비숍"],
+    },
   },
   {
     id: "archer",
     name: "궁수",
-    description: "정확한 원거리 공격으로 적을 저격하는 명궁",
+    weapons: ["활", "석궁"],
+    jobs: {
+      second: ["헌터", "사수"],
+      third: ["레인저", "저격수"],
+      fourth: ["보우마스터", "신궁"],
+    },
+  },
+  {
+    id: "thief",
+    name: "도적",
+    weapons: ["아대", "단검"],
+    jobs: {
+      second: ["어쌔신", "시프"],
+      third: ["허밋", "시프마스터"],
+      fourth: ["나이트로드", "섀도어"],
+    },
   },
 ];
 
@@ -40,13 +56,13 @@ export const warriorJobs: Job[] = [
     id: "page",
     name: "페이지",
     category: "warrior",
-    description: "창과 둔기를 사용하는 기사",
+    description: "검과 둔기를 사용하는 기사",
   },
   {
     id: "spearman",
     name: "스피어맨",
     category: "warrior",
-    description: "창을 주무기로 사용하는 창술사",
+    description: "창과 폴암을 사용하는 창술사",
   },
 ];
 
