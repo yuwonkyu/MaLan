@@ -1,5 +1,17 @@
 // 직업 카테고리
-export type JobCategory = "warrior" | "magician" | "thief" | "archer";
+export type JobCategory = "warrior" | "magician" | "archer" | "thief";
+
+// 직업 카테고리 정보
+export interface JobCategoryInfo {
+  id: JobCategory;
+  name: string;
+  weapons: string[];
+  jobs: {
+    second: string[]; // 2차 직업명
+    third: string[]; // 3차 직업명
+    fourth: string[]; // 4차 직업명
+  };
+}
 
 // 직업 정보
 export interface Job {
