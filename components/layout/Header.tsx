@@ -23,7 +23,10 @@ export default function Header() {
   }, []);
 
   const toggleDarkMode = () => {
-    const newMode = !isDarkMode;
+    // DOM에서 현재 상태 직접 확인
+    const currentMode = document.documentElement.classList.contains("dark");
+    const newMode = !currentMode;
+
     setIsDarkMode(newMode);
     localStorage.setItem("darkMode", String(newMode));
 

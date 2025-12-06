@@ -120,10 +120,30 @@ export const archerJobs: Job[] = [
   },
 ];
 
-// 전체 직업 목록
+// 전체 직업 목록 (모든 차수 포함)
 export const allJobs: Job[] = [
   ...warriorJobs,
   ...magicianJobs,
   ...thiefJobs,
   ...archerJobs,
 ];
+
+// 모든 직업명 목록 (검색용 - 2차, 3차, 4차 포함)
+export const allJobNames: Array<{
+  name: string;
+  category: JobCategory;
+  tier: string;
+}> = [];
+
+// jobCategories에서 모든 직업명 추출
+jobCategories.forEach((category) => {
+  category.jobs.second.forEach((name) => {
+    allJobNames.push({ name, category: category.id, tier: "2차" });
+  });
+  category.jobs.third.forEach((name) => {
+    allJobNames.push({ name, category: category.id, tier: "3차" });
+  });
+  category.jobs.fourth.forEach((name) => {
+    allJobNames.push({ name, category: category.id, tier: "4차" });
+  });
+});
