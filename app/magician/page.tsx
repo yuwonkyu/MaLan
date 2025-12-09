@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function MagicianPage() {
+const MagicianPage = () => {
   const secondJobs = [
     {
       id: "wizard-fp",
@@ -115,4 +115,6 @@ export default function MagicianPage() {
       </section>
     </div>
   );
-}
+};
+
+export default MagicianPage;

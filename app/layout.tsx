@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     "메이플랜드 전사, 마법사, 도적, 궁수 육성 가이드 및 스킬트리, 사냥터 정보",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="ko">
       <body className="flex flex-col min-h-screen">
@@ -23,4 +23,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

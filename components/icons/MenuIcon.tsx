@@ -1,4 +1,4 @@
-export default function MenuIcon({ className }: { className?: string }) {
+const MenuIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}
@@ -14,4 +14,6 @@ export default function MenuIcon({ className }: { className?: string }) {
       />
     </svg>
   );
-}
+};
+
+export default MenuIcon;

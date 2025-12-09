@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import SearchIcon from "@/components/icons/SearchIcon";
 
-export default function SearchBar() {
+const SearchBar = () => {
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -154,4 +154,6 @@ export default function SearchBar() {
       )}
     </div>
   );
-}
+};
+
+export default SearchBar;

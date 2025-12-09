@@ -7,7 +7,7 @@ import MoonIcon from "@/components/icons/MoonIcon";
 import MenuIcon from "@/components/icons/MenuIcon";
 import CloseIcon from "@/components/icons/CloseIcon";
 
-export default function Header() {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -169,4 +169,6 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+};
+
+export default Header;

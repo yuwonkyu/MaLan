@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function WarriorPage() {
+const WarriorPage = () => {
   const secondJobs = [
     {
       id: "fighter",
@@ -105,4 +105,6 @@ export default function WarriorPage() {
       </section>
     </div>
   );
-}
+};
+
+export default WarriorPage;
