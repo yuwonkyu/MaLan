@@ -34,6 +34,16 @@ export const footerLinks = [
     url: "https://itemthankyou.com/main/main.asp",
     description: "아이템 거래",
   },
+  {
+    name: "오픈카카오톡",
+    url: "https://open.kakao.com/o/goksMcTh",
+    description: "메랜 망둥이 빅뱅파사 띱손님",
+  },
+  {
+    name: "오픈카카오톡2",
+    url: "https://open.kakao.com/o/gyDs7sSh",
+    description: "메랜 물망둥 구인구직",
+  },
 ];
 
 interface FooterLinkItemProps {
@@ -42,11 +52,11 @@ interface FooterLinkItemProps {
   description?: string;
 }
 
-export function FooterLinkItem({
+export const FooterLinkItem = ({
   name,
   url,
   description,
-}: FooterLinkItemProps) {
+}: FooterLinkItemProps) => {
   return (
     <li>
       <a
@@ -60,4 +70,4 @@ export function FooterLinkItem({
       </a>
     </li>
   );
-}
+};

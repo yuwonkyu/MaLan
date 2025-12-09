@@ -1,4 +1,4 @@
-export default function SunIcon({ className }: { className?: string }) {
+const SunIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}
@@ -14,4 +14,6 @@ export default function SunIcon({ className }: { className?: string }) {
       />
     </svg>
   );
-}
+};
+
+export default SunIcon;

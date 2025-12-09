@@ -4,7 +4,7 @@ import { useState } from "react";
 import { footerLinks } from "./FooterLinks";
 import ChevronDownIcon from "../icons/ChevronDownIcon";
 
-export default function Footer() {
+const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -67,4 +67,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

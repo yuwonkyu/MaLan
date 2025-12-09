@@ -1,4 +1,4 @@
-export default function MoonIcon({ className }: { className?: string }) {
+const MoonIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}
@@ -14,4 +14,6 @@ export default function MoonIcon({ className }: { className?: string }) {
       />
     </svg>
   );
-}
+};
+
+export default MoonIcon;

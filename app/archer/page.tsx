@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ArcherPage() {
+const ArcherPage = () => {
   const secondJobs = [
     {
       id: "hunter",
@@ -97,4 +97,6 @@ export default function ArcherPage() {
       </section>
     </div>
   );
-}
+};
+
+export default ArcherPage;

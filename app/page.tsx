@@ -2,7 +2,7 @@ import SearchBar from "@/components/ui/SearchBar";
 import { jobCategories } from "@/lib/data/jobs";
 import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="flex flex-col min-h-full">
       {/* 히어로 섹션 */}
@@ -116,4 +116,6 @@ export default function Home() {
       </section>
     </div>
   );
-}
+};
+
+export default Home;

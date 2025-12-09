@@ -1,4 +1,4 @@
-export default function SearchIcon({ className }: { className?: string }) {
+const SearchIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}
@@ -14,4 +14,6 @@ export default function SearchIcon({ className }: { className?: string }) {
       />
     </svg>
   );
-}
+};
+
+export default SearchIcon;

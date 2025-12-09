@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ThiefPage() {
+const ThiefPage = () => {
   const secondJobs = [
     {
       id: "assassin",
@@ -99,4 +99,6 @@ export default function ThiefPage() {
       </section>
     </div>
   );
-}
+};
+
+export default ThiefPage;
