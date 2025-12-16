@@ -25,19 +25,17 @@ const Home = () => {
       {/* 직업 카테고리 */}
       <section className="flex-1 py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 text-center mb-12">
-            직업 선택
-          </h2>
+          <h2 className="page-title text-3xl text-center mb-12">직업 선택</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {jobCategories.map((category) => (
               <Link
                 key={category.id}
                 href={`/${category.id}`}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-gray-900/50 p-6 hover:shadow-xl dark:hover:shadow-gray-900 transition-shadow cursor-pointer group"
+                className="card-hover p-6 cursor-pointer group dark:shadow-gray-900/50 dark:hover:shadow-gray-900"
               >
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <h3 className="job-title mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {category.name}
                   </h3>
 

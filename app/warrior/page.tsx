@@ -37,10 +37,10 @@ const WarriorPage = () => {
       <section className="mb-12">
         <h2 className="section-title mb-6">1차 전직</h2>
         <div className="card-bg p-6">
-          <h3 className="subsection-title mb-3">소드맨 (Swordman)</h3>
+          <h3 className="subsection-title mb-3">전사 (Warrior)</h3>
           <p className="description-text mb-4">레벨 10에 전직 가능</p>
           <Link
-            href="/warrior/swordman/1st"
+            href="/warrior/warrior/1st"
             className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             1차 육성 가이드 보기
