@@ -54,7 +54,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">업데이트</h3>
             <p className="text-gray-400 dark:text-gray-500 text-sm">
-              최종 업데이트: 2025년 12월 9일
+              최종 업데이트: 2025년 12월 16일
             </p>
           </div>
         </div>

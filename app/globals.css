@@ -1,22 +1,17 @@
 @import "tailwindcss";
 
-@theme {
-  --color-background: #f9fafb;
-  --color-foreground: #171717;
-  --color-background-dark: #101828;
-  --color-foreground-dark: #f9fafb;
-}
-
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: var(--color-background);
-  --foreground: var(--color-foreground);
+  color-scheme: light;
+  --background: #f9fafb;
+  --foreground: #171717;
 }
 
 .dark {
-  --background: var(--color-background-dark);
-  --foreground: var(--color-foreground-dark);
+  color-scheme: dark;
+  --background: #111827;
+  --foreground: #f9fafb;
 }
 
 body {
@@ -24,4 +19,39 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 재사용 가능한 커스텀 클래스 */
+@layer components {
+  .page-title {
+    @apply text-4xl font-bold text-gray-900 dark:text-gray-100;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-gray-800 dark:text-gray-100;
+  }
+
+  .job-title {
+    @apply text-2xl font-bold text-gray-900 dark:text-gray-100;
+  }
+
+  .subsection-title {
+    @apply text-xl font-bold text-gray-900 dark:text-gray-100;
+  }
+
+  .tier-label {
+    @apply font-semibold text-gray-700 dark:text-gray-200;
+  }
+
+  .description-text {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+
+  .card-bg {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md;
+  }
+
+  .card-hover {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow;
+  }
 }
