@@ -47,7 +47,7 @@ const MagicianPage = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">1차 전직</h2>
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-bold mb-3">매지션 (Magician)</h3>
+          <h3 className="text-xl font-bold mb-3">마법사 (Magician)</h3>
           <p className="text-gray-600 mb-4">레벨 8에 전직 가능</p>
           <Link
             href="/magician/magician/1st"
@@ -73,12 +73,12 @@ const MagicianPage = () => {
               <div className="space-y-3">
                 {/* 2차 전직 */}
                 <div>
-                  <h4 className="font-semibold text-gray-700 mb-2">
+                  <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">
                     2차 전직 (Lv.30)
                   </h4>
                   <Link
                     href={`/magician/${job.id}/2nd`}
-                    className="text-blue-600 hover:underline block"
+                    className="text-blue-600 dark:text-blue-400 hover:underline block"
                   >
                     → {job.name} 육성 가이드
                   </Link>
@@ -87,22 +87,22 @@ const MagicianPage = () => {
                 {/* 3차, 4차 전직 */}
                 {job.thirdJobs.map((third) => (
                   <div key={third.id}>
-                    <h4 className="font-semibold text-gray-700 mb-2">
+                    <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">
                       3차 전직 (Lv.70)
                     </h4>
                     <Link
                       href={`/magician/${job.id}/${third.id}/3rd`}
-                      className="text-blue-600 hover:underline block mb-3"
+                      className="text-purple-600 dark:text-purple-400 hover:underline block mb-3"
                     >
                       → {third.name} 육성 가이드
                     </Link>
 
-                    <h4 className="font-semibold text-gray-700 mb-2">
+                    <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">
                       4차 전직 (Lv.120)
                     </h4>
                     <Link
                       href={`/magician/${job.id}/${third.id}/4th`}
-                      className="text-blue-600 hover:underline block"
+                      className="text-amber-600 dark:text-amber-400 hover:underline block"
                     >
                       → {third.fourthJob} 육성 가이드
                     </Link>

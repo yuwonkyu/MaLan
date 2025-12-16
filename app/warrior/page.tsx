@@ -60,10 +60,12 @@ const WarriorPage = () => {
               <div className="space-y-3">
                 {/* 2차 전직 */}
                 <div>
-                  <h4 className="tier-label mb-2">2차 전직 (Lv.30)</h4>
+                  <h4 className="tier-label mb-2 text-blue-700 dark:text-blue-300">
+                    2차 전직 (Lv.30)
+                  </h4>
                   <Link
                     href={`/warrior/${job.id}/2nd`}
-                    className="text-blue-600 hover:underline block"
+                    className="text-blue-600 dark:text-blue-400 hover:underline block"
                   >
                     → {job.name} 육성 가이드
                   </Link>
@@ -72,18 +74,22 @@ const WarriorPage = () => {
                 {/* 3차, 4차 전직 */}
                 {job.thirdJobs.map((third) => (
                   <div key={third.id}>
-                    <h4 className="tier-label mb-2">3차 전직 (Lv.70)</h4>
+                    <h4 className="tier-label mb-2 text-purple-700 dark:text-purple-300">
+                      3차 전직 (Lv.70)
+                    </h4>
                     <Link
                       href={`/warrior/${job.id}/${third.id}/3rd`}
-                      className="text-blue-600 hover:underline block mb-3"
+                      className="text-purple-600 dark:text-purple-400 hover:underline block mb-3"
                     >
                       → {third.name} 육성 가이드
                     </Link>
 
-                    <h4 className="tier-label mb-2">4차 전직 (Lv.120)</h4>
+                    <h4 className="tier-label mb-2 text-amber-700 dark:text-amber-300">
+                      4차 전직 (Lv.120)
+                    </h4>
                     <Link
                       href={`/warrior/${job.id}/${third.id}/4th`}
-                      className="text-blue-600 hover:underline block"
+                      className="text-amber-600 dark:text-amber-400 hover:underline block"
                     >
                       → {third.fourthJob} 육성 가이드
                     </Link>
