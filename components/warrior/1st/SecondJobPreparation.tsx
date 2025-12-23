@@ -4,7 +4,7 @@ export default function SecondJobPreparation() {
   return (
     <section className="mb-12">
       <h2 className="section-title mb-6">2차 전직 준비</h2>
-      <div className="card-bg p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20">
+      <div className="card-bg p-6 bg-linear-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20">
         <div className="space-y-4 description-text">
           <p>
             <strong className="text-lg">전직 레벨:</strong>{" "}

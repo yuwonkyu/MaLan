@@ -66,7 +66,7 @@ export default function StatDistribution() {
             {/* 효율적인 분배법 */}
             <div>
               <h3 className="subsection-title mb-3">효율적인 분배법</h3>
-              <div className="p-4 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg">
+              <div className="p-4 bg-linear-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-lg">
                 <p className="font-semibold mb-3 text-purple-700 dark:text-purple-300">
                   🎯 핵심 전략
                 </p>

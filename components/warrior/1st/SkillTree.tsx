@@ -170,7 +170,7 @@ export default function SkillTree() {
         </div>
 
         {/* 오르비스 시대의 변화 */}
-        <div className="card-bg p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20">
+        <div className="card-bg p-6 bg-linear-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20">
           <h3 className="subsection-title mb-3 text-orange-700 dark:text-orange-300">
             🌟 오르비스 시대의 변화
           </h3>

@@ -284,7 +284,7 @@ const PartyQuestPage = () => {
 
         <div className="card-bg p-6">
           <div className="space-y-4 description-text">
-            <div className="p-4 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-lg">
+            <div className="p-4 bg-linear-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-lg">
               <p className="font-bold mb-3">주요 보상</p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>경험치 (레벨업 효율 우수)</li>

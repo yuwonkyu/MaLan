@@ -79,7 +79,7 @@ const PartyQuestListPage = () => {
           >
             ← 이전으로 가기
           </button>
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-4 bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             파티 퀘스트 가이드
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">

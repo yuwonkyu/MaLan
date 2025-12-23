@@ -16,7 +16,7 @@ export default function WolmyoPartyQuestPage() {
           >
             ← 이전으로 가기
           </button>
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-4 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             월묘 파티 퀘스트
           </h1>
           <p className="description-text text-lg">
@@ -170,7 +170,7 @@ export default function WolmyoPartyQuestPage() {
         <div className="card-bg p-6 mb-8">
           <h2 className="section-title mb-4">보너스 맵</h2>
           <div className="space-y-4">
-            <div className="p-4 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded border border-yellow-300 dark:border-yellow-700">
+            <div className="p-4 bg-linear-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded border border-yellow-300 dark:border-yellow-700">
               <p className="font-semibold text-yellow-700 dark:text-yellow-300 mb-2">
                 🎁 보너스 맵 입장 조건
               </p>
