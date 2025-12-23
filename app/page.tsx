@@ -112,6 +112,44 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* 공통 육성 가이드 */}
+      <section className="py-20 bg-white dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="page-title text-3xl text-center mb-12">
+            공통 육성 가이드
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* 파티 퀘스트 */}
+            <Link
+              href="/party-quest"
+              className="card-hover p-6 cursor-pointer group dark:shadow-gray-900/50 dark:hover:shadow-gray-900"
+            >
+              <div className="text-center">
+                <div className="text-4xl mb-4">🎮</div>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  파티 퀘스트
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  커닝 PQ 등 모든 직업 공통 파티 퀘스트 가이드
+                </p>
+              </div>
+            </Link>
+
+            {/* 추후 추가될 가이드 (예시) */}
+            <div className="card-bg p-6 opacity-50 cursor-not-allowed">
+              <div className="text-center">
+                <div className="text-4xl mb-4">🗺️</div>
+                <h3 className="text-xl font-bold mb-2">사냥터 가이드</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  준비 중...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
