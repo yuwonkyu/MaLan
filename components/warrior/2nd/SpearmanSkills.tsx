@@ -109,22 +109,6 @@ export default function SpearmanSkills() {
           </p>
         </div>
       </div>
-
-      {/* 3차 전직 안내 */}
-      <div className="card-bg p-6 border-l-4 border-purple-500">
-        <h3 className="subsection-title mb-4">🎯 3차 전직: 버서커/용기사 (Lv.70)</h3>
-        <div className="space-y-3">
-          <p className="description-text">
-            70레벨에 <strong>버서커(용기사)</strong>로 3차 전직하면 스피어 버스터, 봉 같은 강력한 공격 스킬을 획등합니다.
-          </p>
-          <Link 
-            href="/warrior/2nd/spearman/3rd" 
-            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold"
-          >
-            → 버서커 육성 가이드 보기
-          </Link>
-        </div>
-      </div>
     </>
   );
 }

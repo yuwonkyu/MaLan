@@ -7,14 +7,26 @@ const WarriorPage = () => {
       name: "파이터",
       description: "검과 도끼를 다루는 전사",
       secondJobLink: "/warrior/2nd/fighter",
-      thirdJobs: [{ id: "crusader", name: "크루세이더", fourthJob: "히어로" }],
+      thirdJobs: [{ 
+        id: "crusader", 
+        name: "크루세이더", 
+        thirdJobLink: "/warrior/2nd/fighter/3rd",
+        fourthJob: "히어로",
+        fourthJobLink: "/warrior/2nd/fighter/3rd/4th"
+      }],
     },
     {
       id: "page",
       name: "페이지",
       description: "검과 둔기를 사용하는 기사",
       secondJobLink: "/warrior/2nd/page",
-      thirdJobs: [{ id: "knight", name: "나이트", fourthJob: "팔라딘" }],
+      thirdJobs: [{ 
+        id: "knight", 
+        name: "나이트",
+        thirdJobLink: "/warrior/2nd/page/3rd",
+        fourthJob: "팔라딘",
+        fourthJobLink: "/warrior/2nd/page/3rd/4th"
+      }],
     },
     {
       id: "spearman",
@@ -22,7 +34,13 @@ const WarriorPage = () => {
       description: "창과 폴암을 주무기로 사용",
       secondJobLink: "/warrior/2nd/spearman",
       thirdJobs: [
-        { id: "berserker", name: "버서커(용기사)", fourthJob: "다크나이트" },
+        { 
+          id: "berserker", 
+          name: "버서커(용기사)",
+          thirdJobLink: "/warrior/2nd/spearman/3rd",
+          fourthJob: "다크나이트",
+          fourthJobLink: "/warrior/2nd/spearman/3rd/4th"
+        },
       ],
     },
   ];
@@ -81,7 +99,7 @@ const WarriorPage = () => {
                       3차 전직 (Lv.70)
                     </h4>
                     <Link
-                      href="/warrior/3rd"
+                      href={third.thirdJobLink}
                       className="text-purple-600 dark:text-purple-400 hover:underline block mb-3"
                     >
                       → {third.name} 육성 가이드
@@ -91,7 +109,7 @@ const WarriorPage = () => {
                       4차 전직 (Lv.120)
                     </h4>
                     <Link
-                      href="/warrior/4th"
+                      href={third.fourthJobLink}
                       className="text-amber-600 dark:text-amber-400 hover:underline block"
                     >
                       → {third.fourthJob} 육성 가이드

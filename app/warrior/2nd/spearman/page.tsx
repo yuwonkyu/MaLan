@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import SideNavigation from "@/components/ui/SideNavigation";
 import { useScrollNavigation } from "@/hooks/useScrollNavigation";
 import SpearmanSkills from "@/components/warrior/2nd/SpearmanSkills";
@@ -9,6 +10,7 @@ export default function SpearmanPage() {
   const sections = [
     { id: "skill-tree", label: "스킬 트리" },
     { id: "hunting-grounds", label: "사냥터 가이드" },
+    { id: "next-job", label: "다음 전직" },
   ];
 
   const { activeSection, scrollToSection } = useScrollNavigation(sections);
@@ -37,6 +39,25 @@ export default function SpearmanPage() {
 
             <div id="hunting-grounds">
               <HuntingGroundsGuide />
+            </div>
+
+            <div id="next-job" className="mt-12">
+              <div className="card-bg p-8 border-l-4 border-green-500">
+                <h2 className="section-title mb-6">🎯 3차 전직: 버서커</h2>
+                <div className="space-y-4">
+                  <p className="description-text text-lg">
+                    70레벨에 <strong>버서커</strong>로 3차 전직하면 스피어 버스터, 봉 등 강력한 스킬을 획듍합니다.
+                  </p>
+                  <div className="flex gap-4">
+                    <Link 
+                      href="/warrior/2nd/spearman/3rd" 
+                      className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg transition-colors font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+                    >
+                      버서커 가이드 보기 →
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </main>
         </div>

@@ -157,22 +157,6 @@ export default function CrusaderSkills() {
             </div>
           </div>
         </div>
-
-        {/* 4차 전직 안내 */}
-        <div className="card-bg p-6 border-l-4 border-orange-500">
-          <h3 className="subsection-title mb-4">🎯 4차 전직: 히어로 (Lv.120)</h3>
-          <div className="space-y-3">
-            <p className="description-text">
-              120레벨에 <strong>히어로</strong>로 4차 전직하면 브랜디쉬, 인레이지 등 최종 스킬을 획득합니다.
-            </p>
-            <Link 
-              href="4th" 
-              className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors font-semibold"
-            >
-              → 히어로 육성 가이드 보기
-            </Link>
-          </div>
-        </div>
       </div>
     </section>
   );

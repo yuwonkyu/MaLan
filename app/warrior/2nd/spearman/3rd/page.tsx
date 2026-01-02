@@ -10,6 +10,7 @@ export default function BerserkerPage() {
   const sections = [
     { id: "skill-tree", label: "스킬 트리" },
     { id: "hunting-grounds", label: "추천 사냥터" },
+    { id: "next-job", label: "다음 전직" },
   ];
 
   const { activeSection, scrollToSection } = useScrollNavigation(sections);
@@ -51,6 +52,25 @@ export default function BerserkerPage() {
 
             <div id="hunting-grounds">
               <HuntingGrounds />
+            </div>
+
+            <div id="next-job" className="mt-12">
+              <div className="card-bg p-8 border-l-4 border-green-500">
+                <h2 className="section-title mb-6">🏆 4차 전직: 다크나이트</h2>
+                <div className="space-y-4">
+                  <p className="description-text text-lg">
+                    120레벨에 <strong>다크나이트</strong>로 4차 전직하면 버서크로 극한의 공격력을 발휘합니다.
+                  </p>
+                  <div className="flex gap-4">
+                    <Link 
+                      href="/warrior/2nd/spearman/3rd/4th" 
+                      className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg transition-colors font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
+                    >
+                      다크나이트 가이드 보기 →
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </main>
         </div>

@@ -225,22 +225,6 @@ export default function FighterSkills() {
           </p>
         </div>
       </div>
-
-      {/* 3차 전직 안내 */}
-      <div className="card-bg p-6 border-l-4 border-purple-500">
-        <h3 className="subsection-title mb-4">🎯 3차 전직: 크루세이더 (Lv.70)</h3>
-        <div className="space-y-3">
-          <p className="description-text">
-            70레벨에 <strong>크루세이더</strong>로 3차 전직하면 채스 오브 인큐버스, 콤바 슬래쉬 등 강력한 스킬을 획등합니다.
-          </p>
-          <Link 
-            href="/warrior/2nd/fighter/3rd" 
-            className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold"
-          >
-            → 크루세이더 육성 가이드 보기
-          </Link>
-        </div>
-      </div>
     </>
   );
 }
