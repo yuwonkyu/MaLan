@@ -1,0 +1,250 @@
+import Link from "next/link";
+
+export default function CrusaderSkillTree() {
+  return (
+    <section className="mb-12">
+      <h2 className="section-title mb-6">크루세이더 3차 스킬 트리</h2>
+      
+      <div className="space-y-6">
+        {/* 기본 정보 */}
+        <div className="card-bg p-6">
+          <div className="mb-4">
+            <h3 className="text-xl font-bold mb-3">📌 핵심 포인트</h3>
+            <p className="description-text mb-2">
+              <strong>총 스킬 포인트:</strong> 151포인트 (약 61포인트 남음)
+            </p>
+            <p className="description-text">
+              <strong>핵심 전략:</strong> 콤보 어택(코마) 30레벨과 사용하는 무기(검/도끼)에 따라 패닉(파닉) 30레벨을 찍으면 거의 끝입니다.
+            </p>
+          </div>
+        </div>
+
+        {/* 필수 스킬 */}
+        <div className="card-bg p-6">
+          <h3 className="subsection-title mb-4">🎯 필수 스킬</h3>
+          
+          <div className="space-y-4">
+            {/* 콤보 어택 */}
+            <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border-l-4 border-red-500">
+              <h4 className="font-bold mb-2">콤보 어택 ⭐⭐⭐</h4>
+              <p className="text-sm description-text mb-2">
+                <strong>마스터 레벨:</strong> 30 | <strong>효과:</strong> 밥줄 스킬
+              </p>
+              <p className="text-sm description-text mb-2">
+                마스터 시 <strong className="text-red-600 dark:text-red-400">데미지 220% 증가</strong>, 최대 콤보 카운터 5회
+              </p>
+              <p className="text-sm description-text font-semibold">
+                파스 사용 시 총 380% 데미지를 자랑합니다.
+              </p>
+            </div>
+
+            {/* 패닉 */}
+            <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border-l-4 border-purple-500">
+              <h4 className="font-bold mb-2">패닉 (Panic) ⭐⭐⭐</h4>
+              <p className="text-sm description-text mb-2">
+                <strong>마스터 레벨:</strong> 30
+              </p>
+              <p className="text-sm description-text mb-2">
+                콤보 소모, 적 하나에게 강력한 공격 및 암흑을 겁니다.
+              </p>
+              <p className="text-sm description-text font-semibold mb-2">
+                5콤보일 때 <strong className="text-purple-600 dark:text-purple-400">875%의 한방 데미지</strong>(350% * 250%)를 자랑하며 3차 밥줄 스킬입니다.
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                ※ 암흑은 메이플랜드에서 구현 안 됨
+              </p>
+            </div>
+
+            {/* 코마 */}
+            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-500">
+              <h4 className="font-bold mb-2">코마 (Coma)</h4>
+              <p className="text-sm description-text mb-2">
+                <strong>마스터 레벨:</strong> 30
+              </p>
+              <p className="text-sm description-text mb-2">
+                콤보 소모, 여섯 마리 적에게 기절 공격 (90% 확률)
+              </p>
+              <p className="text-sm text-yellow-600 dark:text-yellow-400">
+                ⚠️ 4차 이후 버려집니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 콤보/패닉 선마 순서 */}
+        <div className="card-bg p-6 border-l-4 border-yellow-500">
+          <h3 className="subsection-title mb-4 text-yellow-700 dark:text-yellow-300">
+            🤔 콤보 어택 vs 패닉, 무엇을 먼저?
+          </h3>
+          <div className="space-y-3">
+            <p className="description-text">
+              1인 공격인 패닉과 다수기인 코마 중 어느 것을 먼저 마스터해도 큰 차이는 없습니다.
+            </p>
+            <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+              <p className="text-sm description-text">
+                <strong className="text-green-600 dark:text-green-400">선호도:</strong> 저레벨 수페(수련의 숲) 갈림길 2층 진입 시에는 
+                한 마리씩 빠르게 잡는 <strong>패닉이 더 낫다</strong>는 의견이 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 남는 포인트 활용 */}
+        <div className="card-bg p-6">
+          <h3 className="subsection-title mb-4">💎 남는 포인트 활용 (약 61포인트)</h3>
+          
+          <div className="space-y-4">
+            <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+              <p className="font-semibold mb-3">📋 권장 투자 순서</p>
+              <ol className="list-decimal list-inside space-y-2 text-sm description-text">
+                <li><strong>MP 회복력 향상:</strong> 20레벨 (미미한 마나 회복)</li>
+                <li><strong>샤우트:</strong> 히어로와 맞출 경우 인사용도로 1포인트 투자</li>
+                <li><strong>나머지 11포인트:</strong> 아이언 바디나 아머래시 등에 자유 투자</li>
+              </ol>
+            </div>
+
+            {/* MP 회복력 향상 */}
+            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+              <h4 className="font-bold mb-2">MP 회복력 향상</h4>
+              <p className="text-sm description-text">
+                10초마다 마나 회복 증가. 크루/나이트가 포인트가 남아 찍는 스킬이나, 
+                혼테일 레이드 시 유혹 패턴에서 용사의 의지 마나 확보에 희박하게 쓸모가 있습니다.
+              </p>
+            </div>
+
+            {/* 샤우트 */}
+            <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+              <h4 className="font-bold mb-2">샤우트 (Shout)</h4>
+              <p className="text-sm description-text mb-2">
+                주위 적 최대 여섯 마리 기절 및 데미지 부여 (데미지 30%로 매우 낮음)
+              </p>
+              <p className="text-sm description-text">
+                95% 확률로 스턴이나 <strong className="text-yellow-600 dark:text-yellow-400">폐기물 스킬</strong>이며, 
+                드래곤 로어 성능에 비교됩니다.
+              </p>
+            </div>
+
+            {/* 아머 크래시 */}
+            <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+              <h4 className="font-bold mb-2">아머 크래시 (Armor Crash)</h4>
+              <p className="text-sm description-text">
+                다수 적의 물리 가드업 무효화 (100% 확률). 
+                프리스트 디스펠 하위 호환이며, <strong className="text-red-600 dark:text-red-400">사실상 실용성 제로의 스킬칸 낭비 스킬</strong>입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 4차 전직 이후 변화 */}
+        <div className="card-bg p-6 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20">
+          <h3 className="subsection-title mb-4 text-amber-700 dark:text-amber-300">
+            🔄 4차 전직 이후 변화 (히어로)
+          </h3>
+          <div className="space-y-3">
+            <p className="description-text">
+              4차 전직 후 사용하는 <strong>한손검(스팟/레드 카트)</strong> 사용 시, 
+              추가 방어력을 위해 <strong className="text-amber-600 dark:text-amber-400">실드 마스터리에 투자</strong>하기도 합니다.
+            </p>
+            
+            <div className="p-4 bg-white dark:bg-gray-800 rounded-lg">
+              <p className="font-semibold mb-2">포인트 재분배</p>
+              <p className="text-sm description-text">
+                아머래시 11 빼고 샤우트 9 빼서 실드 마스터리 투자
+              </p>
+            </div>
+
+            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+              <h4 className="font-bold mb-2">쉴드 마스터리</h4>
+              <p className="text-sm description-text">
+                장비 방패 방어력 상승. 히어로/팔라딘은 양손검 사용으로 불필요하나, 
+                히어로가 사냥 고점을 위해 한손검/방패를 사용할 때 포션 아끼는 용도로 쓰입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 파이널 어택 관련 */}
+        <div className="card-bg p-6 border-l-4 border-red-500">
+          <h3 className="subsection-title mb-4 text-red-700 dark:text-red-300">
+            ⚠️ 파이널 어택 관련 중요 사항
+          </h3>
+          <div className="space-y-3">
+            <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+              <h4 className="font-bold mb-2">사이길 진입 시 파택 제거 필수</h4>
+              <p className="text-sm description-text mb-2">
+                사이길 진입 시 자판기 인형을 <strong>슬블 한 방</strong>으로 정리하는 빌드를 사용하는데, 
+                파택은 <strong className="text-red-600 dark:text-red-400">젠 컷에 방해</strong>가 됩니다.
+              </p>
+              <p className="text-sm description-text mb-2">
+                2차 구간에서는 카니발 존재로 인해 분노 마스터가 메타입니다.
+              </p>
+              <p className="text-sm description-text font-semibold">
+                3차 진입 전까지는 파택을 먼저 마스터할 필요성이 줄었으나, 
+                <strong className="text-green-600 dark:text-green-400"> 크루세이더 콤보 어택을 빠르게 모으기 위해 85레벨 정도에 파택 재투자가 필수</strong>가 됩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 3차 스킬 포인트 요약 */}
+        <div className="card-bg p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
+          <h3 className="subsection-title mb-4">📊 3차 스킬 포인트 요약</h3>
+          <div className="p-4 bg-white dark:bg-gray-800 rounded-lg">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-300 dark:border-gray-600">
+                  <th className="text-left py-2">스킬</th>
+                  <th className="text-center py-2">레벨</th>
+                  <th className="text-center py-2">우선순위</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                <tr>
+                  <td className="py-2">콤보 어택</td>
+                  <td className="text-center">30</td>
+                  <td className="text-center text-red-600 dark:text-red-400 font-bold">필수</td>
+                </tr>
+                <tr>
+                  <td className="py-2">패닉</td>
+                  <td className="text-center">30</td>
+                  <td className="text-center text-red-600 dark:text-red-400 font-bold">필수</td>
+                </tr>
+                <tr>
+                  <td className="py-2">MP 회복력 향상</td>
+                  <td className="text-center">20</td>
+                  <td className="text-center text-blue-600 dark:text-blue-400">권장</td>
+                </tr>
+                <tr>
+                  <td className="py-2">샤우트</td>
+                  <td className="text-center">1~30</td>
+                  <td className="text-center text-yellow-600 dark:text-yellow-400">선택</td>
+                </tr>
+                <tr>
+                  <td className="py-2">아이언 바디/아머래시</td>
+                  <td className="text-center">11</td>
+                  <td className="text-center text-gray-600 dark:text-gray-400">여유시</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* 4차 전직 안내 */}
+        <div className="card-bg p-6 border-l-4 border-orange-500">
+          <h3 className="subsection-title mb-4">🎯 4차 전직: 히어로 (Lv.120)</h3>
+          <div className="space-y-3">
+            <p className="description-text">
+              120레벨에 <strong>히어로</strong>로 4차 전직하면 브랜디쉬, 인레이지 등 최종 스킬을 획득합니다.
+            </p>
+            <Link 
+              href="/warrior/4th" 
+              className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors font-semibold"
+            >
+              → 히어로 육성 가이드 보기
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

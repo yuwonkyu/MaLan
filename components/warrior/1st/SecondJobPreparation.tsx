@@ -16,7 +16,7 @@ export default function SecondJobPreparation() {
             <p className="font-semibold text-lg mb-3">선택 가능한 2차 직업</p>
             <div className="space-y-3">
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
-                <Link href="/warrior/fighter/2nd" className="block">
+                <Link href="/warrior/2nd/fighter" className="block">
                   <p className="font-bold text-blue-700 dark:text-blue-300 mb-1">
                     ⚔️ 파이터 (Fighter)
                   </p>
@@ -26,7 +26,7 @@ export default function SecondJobPreparation() {
                 </Link>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
-                <Link href="/warrior/page/2nd" className="block">
+                <Link href="/warrior/2nd/page" className="block">
                   <p className="font-bold text-blue-700 dark:text-blue-300 mb-1">
                     🛡️ 페이지 (Page)
                   </p>
@@ -36,7 +36,7 @@ export default function SecondJobPreparation() {
                 </Link>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
-                <Link href="/warrior/spearman/2nd" className="block">
+                <Link href="/warrior/2nd/spearman" className="block">
                   <p className="font-bold text-blue-700 dark:text-blue-300 mb-1">
                     🔱 스피어맨 (Spearman)
                   </p>

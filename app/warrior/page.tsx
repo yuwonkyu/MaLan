@@ -6,18 +6,21 @@ const WarriorPage = () => {
       id: "fighter",
       name: "파이터",
       description: "검과 도끼를 다루는 전사",
+      secondJobLink: "/warrior/2nd/fighter",
       thirdJobs: [{ id: "crusader", name: "크루세이더", fourthJob: "히어로" }],
     },
     {
       id: "page",
       name: "페이지",
       description: "검과 둔기를 사용하는 기사",
+      secondJobLink: "/warrior/2nd/page",
       thirdJobs: [{ id: "knight", name: "나이트", fourthJob: "팔라딘" }],
     },
     {
       id: "spearman",
       name: "스피어맨",
       description: "창과 폴암을 주무기로 사용",
+      secondJobLink: "/warrior/2nd/spearman",
       thirdJobs: [
         { id: "berserker", name: "버서커(용기사)", fourthJob: "다크나이트" },
       ],
@@ -40,7 +43,7 @@ const WarriorPage = () => {
           <h3 className="subsection-title mb-3">전사 (Warrior)</h3>
           <p className="description-text mb-4">레벨 10에 전직 가능</p>
           <Link
-            href="/warrior/warrior/1st"
+            href="/warrior/1st"
             className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             1차 육성 가이드 보기
@@ -64,7 +67,7 @@ const WarriorPage = () => {
                     2차 전직 (Lv.30)
                   </h4>
                   <Link
-                    href={`/warrior/${job.id}/2nd`}
+                    href={job.secondJobLink}
                     className="text-blue-600 dark:text-blue-400 hover:underline block"
                   >
                     → {job.name} 육성 가이드
@@ -78,7 +81,7 @@ const WarriorPage = () => {
                       3차 전직 (Lv.70)
                     </h4>
                     <Link
-                      href={`/warrior/${job.id}/${third.id}/3rd`}
+                      href="/warrior/3rd"
                       className="text-purple-600 dark:text-purple-400 hover:underline block mb-3"
                     >
                       → {third.name} 육성 가이드
@@ -88,7 +91,7 @@ const WarriorPage = () => {
                       4차 전직 (Lv.120)
                     </h4>
                     <Link
-                      href={`/warrior/${job.id}/${third.id}/4th`}
+                      href="/warrior/4th"
                       className="text-amber-600 dark:text-amber-400 hover:underline block"
                     >
                       → {third.fourthJob} 육성 가이드
